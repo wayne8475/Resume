@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <title>T大使個人履歷</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Wayne Chang">
+    <meta name="description" content="智邦科技T大使 個人履歷作業">
+    <meta property="og:image" content="https://3t.org.tw/Images/major_logo.png?1622622073">
+    <meta property="og:description" content="智邦科技T大使 個人履歷作業。主要練習HTML/CSS，另外添加Bootstrap美化">
+    <meta property="og:title" content="T大使個人履歷">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <!--Reset CSS-->
+    <link rel="stylesheet" href="reset.css">
+    <!--Bootstrap5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+        </script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&display=swap" rel="stylesheet">
+    <!--My CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-top">
+    <!--導航條-->
+    <nav id="navbar-top" class="navbar navbar-expand-lg sticky-top navbar-light bg-light px-3 data-bs-target">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="https://3t.org.tw/Images/major_logo.png?1622622073"
+                    alt="T navbar icon" width="60" height="35"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#welcome-page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#personal-data">個人資料</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#school-data">最高學歷</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#story-data">個人自傳</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#practice">作業練習</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tool-data">擅長工具</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-me">與我聯繫</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--歡迎頁面-->
+    <div id="welcome-page">
+        <img src="./img/hello.svg" alt="hello-image" class="img-fluid center-img">
+        <div class="message">
+            <p style="font-size: larger;">Hello,</p>
+            <h1><b>I'm Wayne Chang</b></h1>
+            <p style="color: grey;">智邦科技 數位青年T大使</p>
+            <div>
+                <a href="https://www.facebook.com/c.wayne8475" target="_blank"><i class="bi bi-facebook icon"></i></a>
+                <a href="https://twitter.com/wayne8475" target="_blank"><i class="bi bi-twitter icon"></i></a>
+                <a href="https://www.instagram.com/gemini8475/" target="_blank"><i class="bi bi-instagram icon"></i></a>
+                <a href="https://www.linkedin.com/in/%E8%82%B2%E7%B6%AD-%E5%BC%B5-a86774198/" target="_blank"><i class="bi bi-linkedin icon"></i></a>
+            </div>
+            <a href="#contact-me"><button type="button" class="btn btn-outline-danger btn-lg"
+                    id="contact-button">與我聯繫&nbsp;&rarr;</button></a>
+        </div>
+    </div>
+    <!--動畫頁面-->
+    <div id="animation-bg"><img src="wave-bg.svg"></div>
+    <!--個人資料-->
+    <div id="personal-data" style="text-align: center;">
+        <br><br>
+        <div class="message">
+            <h2>個人資料</h2>
+            <hr>
+            <table>
+                <tr>
+                    <th>Age</th>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td><a href="https://goo.gl/maps/RmrPxtM8Cwpf9W2M9" target="_blank">104臺北市中山區建國北路三段81巷15號5樓</a></td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>0937618051</td>
+                </tr>
+                <tr>
+                    <th>Date of Birth</th>
+                    <td>1996/05/31</td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <th>Mail</th>
+                    <td><a href="mailto:cywayne8475@gmail.com">cywayne8475@gmail.com</a></td>
+                </tr>
+            </table>
+        </div>
+        <img class="round-pic" src="./img/selfie.jpg" alt="My selfie">
+    </div>
+    <div id="school-data" style="text-align: center;">
+        <br><br><br>
+        <img class="round-pic" src="./img/diploma.jpg" alt="diploma">
+        <div class="message">
+            <h2 id="school-data">最高學歷</h2>
+            <hr>
+            <p>2016-2019&emsp;<a href="http://web.cs.nthu.edu.tw/" target="_blank">國立清華大學&emsp;資訊工程學系</a>&emsp;畢業</p>
+        </div>
+    </div>
+    <div id="story-data">
+        <br><br><br>
+        <h2 class="headings">個人自傳</h2>
+        <hr>
+        <div class="accordion" id="accordiontable">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <b>家庭背景</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordiontable">
+                    <div class="accordion-body">
+                        我出身自一個小家庭，父母親目前都已經退休在家，父親原本從事銀行業，母親則是在學校任職，家中還有一個姊姊，目前任職資深動畫師，家庭關係融洽。<br>
+                        大學畢業後，打算先服完兵役，結果遇上疫情拖延了近半年，役畢後原本打算進修研究所，但是又遇上三級警戒，對於未來感到很徬徨，碰巧看到此計畫覺得很有興趣，希望能加入T大使的行列。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <b>工作經歷</b>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordiontable">
+                    <div class="accordion-body">
+                        雖然我沒有工作經歷，但是在學期間的課程參與過各種類型的分組專案，累積個人學以致用的經驗，像是在軟體實驗課中與組員共同以<i>Javascript</i>開發網頁與<abbr
+                            title="Application">App</abbr>、遊戲程式設計課中用<b><i>Unity</i>開發射擊遊戲</b>、<b>物聯網概論課程建置腳踏車追蹤系統</b>，而在畢業專題學習<b>訓練AI語音辨識模型</b>等，這些團隊合作經驗有好有壞，我體悟到專案的成功與否來自於組員的同心協力，適才適用的分工合作才能將每個人的才能發揮到極致。<br>
+                        我深知自己仍缺乏工作的歷練，因此非常希望能加入T大使計畫，實際體驗與磨練我的工作能力以符合就業市場的需求。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <b>對數位轉型的概念認知及相關學習</b>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordiontable">
+                    <div class="accordion-body">
+                        我原本就讀的就是資訊工程學系，對於數位科技算是有比較深刻的認識，在大學階段也有修過相關課程，像是<b>物聯網概論</b>、<b>社群網路</b>等，我理解數位轉型在這個時代的必要性。<br>
+                        在疫情衝擊下許多產業都必須因應大環境轉型，像是傳統商店必須改以網路行銷的方式才有機會在避免接觸的情況下持續經營，或是利用科技來輔助控制疫情，都是在這後疫情時代相當重要的一環。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="practice" style="text-align: center;">
+        <br><br><br>
+        <h2 class="headings">作業練習</h2>
+        <hr>
+        <div>
+            <div class="card practicecard">
+                <a href="PracticePage.html#week3"><img src="./img/week3.jpg" class="card-img-top" alt="Week 3"></a>
+                <div class="card-body">
+                    <p class="card-text">Week 3 ProgressBar</p>
+                </div>
+            </div>
+            <div class="card practicecard">
+                <a href="PracticePage.html#week4"><img src="./img/week4.jpg" class="card-img-top" alt="Week 4"></a>
+                <div class="card-body">
+                    <p class="card-text">Week 4 JS/FlexBox/Grid</p>
+                </div>
+            </div>
+            <div class="card practicecard">
+                <a href="PracticePage.html"><img src="./img/unknown.jpg" class="card-img-top" alt="Week 5"></a>
+                <div class="card-body">
+                    <p class="card-text">Week 5 ____________</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tool-data" style="text-align: center;">
+        <br><br><br>
+        <h2 class="headings">擅長工具</h2>
+        <hr>
+        <div>
+            <div class="card">
+                <img src="./img/HTML.jpg" class="card-img-top" alt="HTML">
+                <div class="card-body">
+                    <p class="card-text">HTML</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/CSS.jpg" class="card-img-top" alt="CSS">
+                <div class="card-body">
+                    <p class="card-text">CSS</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/Javascript.png" class="card-img-top" alt="JS">
+                <div class="card-body">
+                    <p class="card-text">JavaScript</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="./img/Python.jpg" class="card-img-top" alt="Python">
+                <div class="card-body">
+                    <p class="card-text">Python</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/C.png" class="card-img-top" alt="C++">
+                <div class="card-body">
+                    <p class="card-text">C/C++</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/Unity.jpg" class="card-img-top" alt="Unity">
+                <div class="card-body">
+                    <p class="card-text">Unity</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-me" style="text-align: center;">
+        <br><br><br>
+        <h2 class="headings">與我聯繫</h2>
+        <hr>
+        <div id="messageform">
+            <form target="_blank">
+                <div class="mb-3">
+                    <label for="NameInput" class="form-label">姓名：</label>
+                    <input type="text" class="form-control form-control-sm" id="NameInput" name="Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="EmailInput" class="form-label">信箱：</label>
+                    <input type="email" class="form-control form-control-sm" id="EmailInput" name="Email"
+                        aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">請放心信箱地址只做為回信及副本寄送使用</div>
+                </div>
+                <div class="mb-3">
+                    <label for="selectCharacter" class="form-label">工作角色：</label>
+                    <select class="form-select form-select-sm" id="selectCharacter" name="Charater" required>
+                        <option selected>選取</option>
+                        <option value="1">學者/研究員</option>
+                        <option value="2">顧問/諮詢專家</option>
+                        <option value="3">業務主管</option>
+                        <option value="4">開發人員/工程師</option>
+                        <option value="5">企業家 (創辦人/共同創辦人)</option>
+                        <option value="6">IT主管</option>
+                        <option value="7">IT專業人員或技術支援經理</option>
+                        <option value="8">新聞業/媒體分析師</option>
+                        <option value="9">業務/行銷</option>
+                        <option value="10">學生</option>
+                        <option value="11">系統架構師</option>
+                        <option value="12">系統管理員</option>
+                        <option value="13">創投家</option>
+                        <option value="14">路過民眾熱情相挺</option>
+                    </select>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="Yes" id="mailbackcheck" name="mailbackcheck"
+                        checked>
+                    <label class="form-check-label" for="mailbackcheck">
+                        將副本也寄給我
+                    </label>
+                </div>
+                <label class="form-label mb-3">選擇一個主題：</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Topic" id="topicInterview" value="Interview"
+                        checked>
+                    <label class="form-check-label" for="topicInterview">
+                        面試邀請
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Topic" id="topicTechnic" value="Technic">
+                    <label class="form-check-label" for="topicTechnic">
+                        技術交流
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Topic" id="topicOthers" value="Others">
+                    <label class="form-check-label" for="topicOthers">
+                        其他事由
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="rangefeedback" class="form-label">請為我的網站評分：</label>
+                    <input type="range" min="0" max="100" step="1" id="rangefeedback" value="90" name="Rating"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output>90</output>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="textareaComments"
+                        name="Comments" style="height: 100px"></textarea>
+                    <label for="textareaComments">留言給我</label>
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin:10px;"
+                    formaction="//59.120.19.161:7321/api/TestGetData" formmethod="GET"
+                    formtarget="_blank">GET發送</button>
+                <button type="submit" class="btn btn-primary" style="margin:10px;"
+                    formaction="//59.120.19.161:7321/api/TestPostData" formmethod="POST"
+                    formtarget="_blank">POST發送</button>
+            </form>
+        </div>
+        <div id="carouselslide" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/ad1.png" class="d-block w-100" alt="ad1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/ad2.png" class="d-block w-100" alt="ad2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/ad3.png" class="d-block w-100" alt="ad3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/ad4.png" class="d-block w-100" alt="ad4">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselslide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselslide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="https://www.facebook.com/c.wayne8475" target="_blank"><i class="bi bi-facebook icon"></i></a>
+            <a href="https://twitter.com/wayne8475" target="_blank"><i class="bi bi-twitter icon"></i></a>
+            <a href="https://www.instagram.com/gemini8475/" target="_blank"><i class="bi bi-instagram icon"></i></a>
+            <a href="https://www.linkedin.com/in/%E8%82%B2%E7%B6%AD-%E5%BC%B5-a86774198/" target="_blank"><i class="bi bi-linkedin icon"></i></a>
+        </div>
+        <p>@2021 Wayne Chang 本網頁內容僅作為練習用，部分素材皆取自網路，不作為營利使用。</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    position: relative;
+}
+#welcome-page{
+    background-color:#F4F6F8;
+    text-align: center;
+}
+.center-img{
+    display: inline-block;
+    margin: 20px;
+}
+.nav-link.active{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.message{
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    margin: 50px;
+}
+.icon{
+    color: black;
+    font-size: 1.8rem;
+}
+.icon:hover{
+    color: rgb(62, 62, 175);
+}
+#contact-button{
+    margin-top:20px;
+}
+#animation-bg{
+    display: block;
+    width: 100%;
+    min-width: 600px;
+    transform-origin: top;
+    animation: wavedown ;
+    animation-duration: 2000ms; 
+}
+@keyframes wavedown {
+    0% {
+      transform: scale(1, 0);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+}
+.round-pic{
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 30px;
+    max-height: 400px;
+    margin-left: 50px;
+    max-width: 75%;
+}
+table, th, td {
+    border: 20px solid white;
+    border-collapse: collapse;
+}
+#accordiontable{
+    margin:0 auto;
+    max-width: 75%;
+}
+.headings{
+    margin: 30px;
+    text-align: center;
+}
+.card{
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    width: 18rem;
+    height: 13rem;
+    margin: 10px;
+    border-width: 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.card::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease-in-out;
+}
+.card-img-top{
+    width: 17.5rem;
+    height: 9rem;
+}
+.card:hover{
+    transform: scale(1.1, 1.1);
+}
+.card:hover::after{
+    opacity: 1;
+}
+.card-text{
+    border-width: 3px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+.practicecard{
+    border-color: lightblue;
+}
+#messageform{
+    vertical-align: middle;
+    text-align: left;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 15px;
+    max-width: 40%;
+    background-color: khaki;
+    margin-right: 50px;
+}
+#carouselslide{
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 40%;
+}
+.carousel-control-next-icon {
+    background-color: black;
+}
+.carousel-control-prev-icon{
+    background-color: black;
+}
+.carousel-indicators{
+    background-color: lightslategrey;
+}
+footer{
+    margin-top: 10px;
+    padding-top: 20px;
+    height: 150px;
+    background-color: lightgrey;
+    text-align: center;
+    vertical-align:sub;
+}
