@@ -6,7 +6,7 @@ body{
     position: relative;
 }
 .headings{
-    margin: 30px;
+    margin: 30px auto;
     text-align: center;
     text-shadow: 0 1px 3px rgb(48, 51, 54);
 }
@@ -110,7 +110,7 @@ svg{
     transform : rotate(-90deg);
 }
 
-#resultzone{
+.wordzone{
     background-color: darkslategrey;
     color: white;
     text-align: left;
@@ -222,6 +222,59 @@ svg{
 
 .grid-item :hover{
     transform: scale(1.2, 1.2);
+}
+
+.pcard {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    min-width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    height: 100%;
+}
+.pimg {
+    max-width: 300px;
+    aspect-ratio: 1/1 ;
+}
+.pimg img:last-child {
+    display: none;  
+}
+.pimg:hover img:last-child {
+    display: block;  
+}
+.pimg:hover img:first-child {
+    display: none;  
+}
+  
+.price {
+    color: grey;
+    font-size: 22px;
+}
+.pcard p{
+    padding: 10px;
+}
+
+.pcard a{
+    margin-top: auto;
+}
+
+.pcard  button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.pcard button:hover {
+    opacity: 0.7;
 }
 
 footer{

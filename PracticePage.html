@@ -49,6 +49,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#week4">Week4</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#week5">Week5</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -106,11 +109,12 @@
                     <h3 class="headings">Caculator</h3>
                     <img src="img/caculator.jpg" alt="caculator" style="width:100%">
                     <br><br>
-                    <button type="button" class="btn btn-danger" onclick="caculator()" id="caculatbtn">開始計算</button>
+                    <button type="button" class="btn btn-danger" onclick="caculator()" id="caculatbtn">Start
+                        開始計算</button>
                 </div>
                 <div class="col">
                     <h3 class="headings">Result</h3>
-                    <div id="resultzone">
+                    <div class="wordzone" id="resultzone">
                         Waiting to start ...
                     </div>
                 </div>
@@ -162,6 +166,108 @@
                 <div class="grid-item"><img src="./img/dog6.jpg"></div>
                 <div class="grid-item" style="grid-column: 2 / 4; grid-row: 5 / 8;"><img src="./img/dog7.jpeg"></div>
                 <div class="grid-item"><img src="./img/dog8.jpeg"></div>
+            </div>
+        </div>
+    </div>
+    <!--Week5 Js Html DOM-->
+    <div id="week5" style="text-align: center;">
+        <br><br><br>
+        <h2 class="headings">Week 5</h2>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="headings">Create JS Map</h3>
+                    <div class="wordzone" id="tempzone">
+                        Click the start button to generate 30 pairs of temperatures ...
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-danger" onclick="generateTemp()" id="tempbtn">Start
+                        開始生成</button>
+                </div>
+                <div class="col">
+                    <h3 class="headings">Sort the Array to JSON</h3>
+                    <div class="wordzone" id="sortzone">
+                        ← You have to generate the map first...
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-danger" onclick="sortMap()" id="sortbtn" disabled>Sort
+                        開始排序</button>
+                </div>
+            </div>
+            <br><br>
+            <div class="row" id="phead">
+                <div class="container">
+                    <h3 class="headings">Rewrite the Product Card by JS HTML DOM</h3>
+                    <button type="button" class="btn btn-danger" onclick="langzhTW()" id="langbtn">
+                        <i class="bi bi-translate"></i>&nbsp;切換成繁體中文
+                    </button>
+                    <br><br>
+                </div>
+                <div class="col">
+                    <div class="pcard">
+                        <div class="pimg">
+                            <img src="https://img.gokids.com.tw/GoodPic/48/big/162987794619648.jpg"
+                                alt="Arkham Horror Lcg" style="width:100%">
+                            <img src="http://www.gokids.com.tw/tsaiss/gokids/21826281237978_434.jpg"
+                                alt="Arkham Horror Lcg" style="width:100%">
+                        </div>
+                        <h4>Arkham Horror Lcg: Revised Core Set</h4>
+                        <p class="price">$59.95</p>
+                        <p>Investigate the horrors of Arkham while courting cosmic doom.</p>
+                        <a href="https://shop.asmodee.com/arkham-horror-lcg-5-revised-core-set-ahc60" target="_blank">
+                            <button><i class="bi bi-cart-fill"></i>&nbsp;Buy a Copy</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="pcard">
+                        <div class="pimg">
+                            <img src="http://www.gokids.com.tw/tsaiss/gokids/21745313097901_732_450.jpg" alt="MOM 2E"
+                                style="width:100%">
+                            <img src="http://www.gokids.com.tw/tsaiss/gokids/513br05ouzL_450.jpg" alt="MOM 2E"
+                                style="width:100%">
+                        </div>
+                        <h4>Mansion of Madness 2nd Edition</h4>
+                        <p class="price">$109.99</p>
+                        <p>Unravel mysteries in Arkham with your investigative team in this app-guided game.</p>
+                        <a href="https://shop.asmodee.com/mansions-of-madness-2nd-edition-mad20" target="_blank">
+                            <button><i class="bi bi-cart-fill"></i>&nbsp;Buy a Copy</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="pcard">
+                        <div class="pimg">
+                            <img src="https://img.gokids.com.tw/GoodPic/70/big/162666705227770.jpg" alt="Descent"
+                                style="width:100%">
+                            <img src="https://img.gokids.com.tw/GoodPic/68/small/1626846699268.jpg" alt="Descent"
+                                style="width:100%">
+                        </div>
+                        <h4>Descent: Legends of the Dark</h4>
+                        <p class="price">$174.95</p>
+                        <p>An app-driven dungeon crawl set in the world of Terrinoth.</p>
+                        <a href="https://shop.asmodee.com/descent-5-legends-of-the-dark-dle01" target="_blank">
+                            <button><i class="bi bi-cart-fill"></i>&nbsp;Buy a Copy</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="pcard">
+                        <div class="pimg">
+                            <img src="https://img.gokids.com.tw/GoodPic/57/small/162866032719057.jpg" alt="Unfathomable"
+                                style="width:100%">
+                            <img src="https://img.gokids.com.tw/GoodPic/80/small/162866129015680.jpg" alt="Unfathomable"
+                                style="width:100%">
+                        </div>
+                        <h4>Unfathomable</h4>
+                        <p class="price">$79.95</p>
+                        <p>Traitors and Terror. Immerse yourself among the passengers and crew of SS Atlantica.</p>
+                        <a href="https://shop.asmodee.com/unfathomable-unf01" target="_blank">
+                            <button><i class="bi bi-cart-fill"></i>&nbsp;Buy a Copy</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
