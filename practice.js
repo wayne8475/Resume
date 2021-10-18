@@ -151,6 +151,8 @@ function generateTemp(){
     tempMap.clear();
     function sumofodd(){
         if(tempnum > 30){
+            tempzone.innerHTML += '<br><strong style = "color:tomato;">You can press the button on the right to sort the map.➙</strong>';
+            tempzone.scrollTop = tempzone.scrollHeight;
             clearInterval(createmap);
             tempbtn.removeAttribute('disabled');
             sortbtn.removeAttribute('disabled');
