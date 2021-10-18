@@ -19,10 +19,13 @@ const tempzone = document.getElementById("tempzone");
 const sortzone = document.getElementById("sortzone");
 const tempMap = new Map();
 var tempnum = 1;
-//Html DOM
+//Html DOM ver0
 const langbtn = document.getElementById("langbtn");
 const phead = document.getElementById("phead");
 const btncollection = phead.getElementsByTagName("button");
+//Html DOM ver1
+const pcard = document.getElementById("productCard");
+const rewritebtn = document.getElementById("rewritebtn");
 
 //Linear Progress Bar
 function startBar() {
@@ -247,4 +250,49 @@ function langEN(){
     for (let i = 1; i < btncollection.length; i++) {
         btncollection[i].style.backgroundColor = "black";
     }
+}
+
+function rewrite(){
+    rewritebtn.classList.remove("btn-danger");
+    rewritebtn.classList.add("btn-success");
+    rewritebtn.setAttribute('onclick','undo()');
+    rewritebtn.innerHTML = 'Undo';
+    pcard.innerHTML = "";
+    //img
+    var pimage = document.createElement('img');
+    pimage.setAttribute('src','./img/jeans3.jpg');
+    pimage.setAttribute('alt','Denim Jeans');
+    pimage.style.width = "100%";
+    //h1
+    var pheading = document.createElement('h1');
+    pheading.innerText = "Tailored Jeans";
+    //price
+    var pprice = document.createElement('p');
+    pprice.classList.add("price");
+    pprice.innerHTML = "$19.99";
+    //description
+    var pdescrip = document.createElement('p');
+    pdescrip.innerText= "Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.";
+    //button
+    var pbutton = document.createElement('p');
+    var pbuttontag = document.createElement('button');
+    pbuttontag.innerHTML = "Add to Cart";
+    pbutton.appendChild(pbuttontag);
+    pbutton.style.marginTop = "auto";
+    pbutton.style.marginBottom = "0";
+
+    //append
+    pcard.appendChild(pimage);
+    pcard.appendChild(pheading);
+    pcard.appendChild(pprice);
+    pcard.appendChild(pdescrip);
+    pcard.appendChild(pbutton);
+}
+
+function undo(){
+    rewritebtn.classList.remove("btn-success");
+    rewritebtn.classList.add("btn-danger");
+    rewritebtn.setAttribute('onclick','rewrite()');
+    rewritebtn.innerHTML = 'Rewrite';
+    pcard.innerHTML = "";
 }
